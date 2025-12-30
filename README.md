@@ -70,18 +70,18 @@ ________________________________________
 **Análisis**:
 1. Abrir una terminal de Anaconda Prompt e ir a la carpeta donde descargaste este proyecto:
    ```bash
-   cd your_local_root\default-credit-card-clients-regression-classification
+   cd your_local_root\API-steel-rebar-price-prediction
 2. Crear y activar el entorno virtual
    ```bash
-   conda create -n default_of_credit_card_clients_env python=3.11.7 -y
-   conda activate default_of_credit_card_clients_env
+   conda create -n API-steel-rebar-price-prediction_env python=3.11.4 -y
+   conda activate API-steel-rebar-price-prediction_env
 3. Instalar dependencias
    ```bash
    pip install -r requirements.txt
 4. Navegar a 
-   your_local_root\default-credit-card-clients-regression-classification
+   your_local_root\API-steel-rebar-price-prediction
    y abrir el archivo
-   model_develop_credit_card_clients.ipynb en su IDE prefererido, por ejemplo VSCode.
+   model_develop_steel_rebar.ipynb en su IDE prefererido, por ejemplo VSCode.
 
 5. Ejecutar el script, indicando adecuadamente el environment previamente creado.
 
