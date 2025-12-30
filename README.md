@@ -43,16 +43,24 @@ La estructura de este proyecto es:
 
 ```text
 
-default-credit-card-clients/                         # Carpeta de proyecto
-├── .gitignore
-├── LICENSE
-├── model_develop_credit_card_clients.ipynb          # Script de solución final
-├── model_develop_credit_card_clients_develop.ipynb  # Script de desarrollo
-├── PPT_Resumen.pptx                                 # Presentación de solución propuesta
-├── README.md
-├── Respuestas_a_Desarrollo_de_Solucion.docx         # Archivo Word de Respuestas a preguntas de cliente de este proyecto 
-└── data/
-    └── default_of_credit_card_clients.csv           # Archivo CSV de conjunto de datos 'Default of Credit Card Clients'
+API-steel-rebar-price-prediction                     # Carpeta de proyecto
+│   model_develop_steel_rebar.ipynb                  # Jupyter Notebook de análisis
+│   README.md
+│   requirements.txt
+│   Reto_DS.pdf
+│
+├───appFastAPI
+│   │   app.py                                       # Python Script de API REST
+│   │   model.py                                     # Python Script de funciones en producción 
+│   │   requirements.txt
+│   │   __init__.py
+│   │
+│   └───__pycache__
+│           app.cpython-313.pyc
+│           model.cpython-313.pyc
+│
+└───data
+        Steel_Rebar_Futures_Historical_Data.csv      # Base de datos en archivo .csv
 
 ```
 
