@@ -3,7 +3,7 @@ ________________________________________
 **Objetivo**
 
 El objetivo de este proyecto es desarrollar y desplegar una API REST que pueda:
-1) Predecir la cantidad de precio (USD) del día siguiente de la varilla corrugada.
+1) Predecir el precio (USD/ton) del día siguiente de la varilla corrugada.
  ________________________________________
 
 **Diccionario**
