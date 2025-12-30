@@ -1,4 +1,4 @@
-## Data Science Project: Modelado predictivo para predicción de precio de cierre (regresión) del día siguiente para la varilla corrugada usando una base de datos compuesta por variables financiaras y del mercado.
+## Data Science Project: Modelado predictivo para predicción de precio de cierre (regresión) del día siguiente para la varilla corrugada usando una base de datos compuesta por variables financieras y del mercado.
 ________________________________________
 **Objetivo**
 
