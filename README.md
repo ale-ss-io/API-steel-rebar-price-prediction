@@ -5,7 +5,12 @@ ________________________________________
 El objetivo de este proyecto es desarrollar y desplegar una API REST que pueda:
 1) Predecir el precio (USD/ton) del día siguiente de la varilla corrugada.
  ________________________________________
+**Base de datos**
 
+Para este proyecto decidimos usar tres conjunto de datos:
+1) Precio de la varilla corrugada: Obtenida via descarga manual en https://mx.investing.com/commodities/steel-rebar-historical-data
+2) Yahoo Finance: Obtenida via API de python
+3) FRED: Obtenida via API de python 
 
 | Variable                  | Descripción                                                           | Fuente de datos                         | Descarga_RealTime |
 | ------------------------- | --------------------------------------------------------------------- | --------------------------------------- | ----------------- |
