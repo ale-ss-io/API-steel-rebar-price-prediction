@@ -7,25 +7,6 @@ El objetivo de este proyecto es desarrollar y desplegar una API REST que pueda:
  ________________________________________
 
 
-
-| Variable                  | Descripción                                                           | Fuente de datos                         |
-| ------------------------- | --------------------------------------------------------------------- | --------------------------------------- |
-| **rebar_price**           | Precio de varilla corrugada en USD/ton                                | Steel_Rebar_Futures_Historical_Data.csv |
-| **hot_rolled_coil_price** | Precio del acero laminado en caliente (Hot Rolled Coil) en USD/ton    | Yahoo Finance (HRC=F)                   |
-| **iron_ore_price**        | Precio del mineral de hierro (Iron Ore) en USD/ton                    | Yahoo Finance (TIO=F)                   |
-| **coking_coal_price**     | Precio del carbón coquizable (Coking Coal) para alto horno en USD/ton | Yahoo Finance (MTF=F)                   |
-| **copper_price**          | Precio del cobre en USD/libra                                         | Yahoo Finance (HG=F)                    |
-| **crude_oil_price**       | Precio del petróleo crudo en USD/barril                               | Yahoo Finance (CL=F)                    |
-| **usd_cny**               | Tipo de cambio USD/CNY (yuan chino por dólar estadounidense)          | Yahoo Finance (USDCNY=X)                |
-| **aluminum_price**        | Precio del aluminio en USD/ton                                        | Yahoo Finance (ALI=F)                   |
-| **dollar_index**          | Índice de fortaleza del dólar estadounidense (base 100)               | Yahoo Finance (DX-Y.NYB)                |
-| **vix**                   | Volatilidad esperada del S&P 500 (índice de puntos de volatilidad)    | Yahoo Finance (^VIX)                    |
-| **sp500**                 | Índice bursátil de las 500 empresas más grandes de EE. UU.            | Yahoo Finance (^GSPC)                   |
-| **usd_mxn**               | Tipo de cambio USD/MXN (peso mexicano por dólar estadounidense)       | FRED (DEXMXUS)                          |
-
-
-
-
 | Variable                  | Descripción                                                           | Fuente de datos                         | Descarga_RealTime |
 | ------------------------- | --------------------------------------------------------------------- | --------------------------------------- | ----------------- |
 | **rebar_price**           | Precio de varilla corrugada en USD/ton                                | Steel_Rebar_Futures_Historical_Data.csv | No                |
