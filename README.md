@@ -1,10 +1,9 @@
-## Data Science Project: Modelado predictivo para detección de incumplimiento de pago (*default*) en clientes de tarjeta de crédito (clasificación), así como su monto de pago mensual (regresión) en el conjunto de datos 'Default of Credit Card Clients'.
+## Data Science Project: Modelado predictivo para predicción de precio de cierre (regresión) del día siguiente para la varilla corrugada usando una base de datos compuesta por variables financiaras y del mercado.
 ________________________________________
 **Objetivo**
 
-El objetivo de este proyecto es, dado el conjunto de datos 'Default of Credit Card Clients', desarrollar modelos para predecir:
-1) La cantidad de pago mensual (dólares NT) en Junio, 2005 por parte de un cliente.
-2) Si o no un cliente cae en incumplimiento de pago (*default*) para Octubre 2005.
+El objetivo de este proyecto es desarrollar y desplegar una API REST que prediga:
+1) La cantidad de precio (USD) del día siguiente de la varilla corrugada.
  ________________________________________
 
 **Diccionario**
