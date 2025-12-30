@@ -6,42 +6,6 @@ El objetivo de este proyecto es desarrollar y desplegar una API REST que pueda:
 1) Predecir el precio (USD/ton) del día siguiente de la varilla corrugada.
  ________________________________________
 
-**Diccionario**
-| Variable                       | Descripción                                                                                                                                                     |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ID**                         | Identificador de cada cliente                                                                                                                                   |
-| **LIMIT_BAL**                  | Monto de crédito otorgado en dólares NT (incluye crédito individual y familiar/suplementario)                                                                   |
-| **SEX**                        | Género (1 = hombre, 2 = mujer)                                                                                                                                  |
-| **EDUCATION**                  | Nivel educativo (1 = posgrado, 2 = universidad, 3 = preparatoria, 4 = otros, 5 = desconocido, 6 = desconocido)                                                  |
-| **MARRIAGE**                   | Estado civil (1 = casado, 2 = soltero, 3 = otros)                                                                                                               |
-| **AGE**                        | Edad en años                                                                                                                                                    |
-| **PAY_0**                      | Estado de pago en septiembre de 2005 (-1 = pago puntual, 1 = retraso de 1 mes, 2 = retraso de 2 meses, …, 8 = retraso de 8 meses, 9 = retraso de 9 meses o más) |
-| **PAY_2**                      | Estado de pago en agosto de 2005 (misma escala que PAY_0)                                                                                                       |
-| **PAY_3**                      | Estado de pago en julio de 2005 (misma escala que PAY_0)                                                                                                        |
-| **PAY_4**                      | Estado de pago en junio de 2005 (misma escala que PAY_0)                                                                                                        |
-| **PAY_5**                      | Estado de pago en mayo de 2005 (misma escala que PAY_0)                                                                                                         |
-| **PAY_6**                      | Estado de pago en abril de 2005 (misma escala que PAY_0)                                                                                                        |
-| **BILL_AMT1**                  | Monto del estado de cuenta en septiembre de 2005 (dólares NT)                                                                                                   |
-| **BILL_AMT2**                  | Monto del estado de cuenta en agosto de 2005 (dólares NT)                                                                                                       |
-| **BILL_AMT3**                  | Monto del estado de cuenta en julio de 2005 (dólares NT)                                                                                                        |
-| **BILL_AMT4**                  | Monto del estado de cuenta en junio de 2005 (dólares NT)                                                                                                        |
-| **BILL_AMT5**                  | Monto del estado de cuenta en mayo de 2005 (dólares NT)                                                                                                         |
-| **BILL_AMT6**                  | Monto del estado de cuenta en abril de 2005 (dólares NT)                                                                                                        |
-| **PAY_AMT1**                   | Monto del pago realizado en septiembre de 2005 (dólares NT)                                                                                                     |
-| **PAY_AMT2**                   | Monto del pago realizado en agosto de 2005 (dólares NT)                                                                                                         |
-| **PAY_AMT3**                   | Monto del pago realizado en julio de 2005 (dólares NT)                                                                                                          |
-| **PAY_AMT4**                   | Monto del pago realizado en junio de 2005 (dólares NT)                                                                                                          |
-| **PAY_AMT5**                   | Monto del pago realizado en mayo de 2005 (dólares NT)                                                                                                           |
-| **PAY_AMT6**                   | Monto del pago realizado en abril de 2005 (dólares NT)                                                                                                          |
-| **default.payment.next.month** | Incumplimiento de pago el próximo mes (1 = sí, 0 = no)                                                                                                          |
-
-
-
-
-
-
-
-
 
 
 | Variable                  | Descripción                                                           | Fuente de datos                         |
@@ -58,6 +22,26 @@ El objetivo de este proyecto es desarrollar y desplegar una API REST que pueda:
 | **vix**                   | Volatilidad esperada del S&P 500 (índice de puntos de volatilidad)    | Yahoo Finance (^VIX)                    |
 | **sp500**                 | Índice bursátil de las 500 empresas más grandes de EE. UU.            | Yahoo Finance (^GSPC)                   |
 | **usd_mxn**               | Tipo de cambio USD/MXN (peso mexicano por dólar estadounidense)       | FRED (DEXMXUS)                          |
+
+
+
+
+| Variable                  | Descripción                                                           | Fuente de datos                         | Descarga_RealTime |
+| ------------------------- | --------------------------------------------------------------------- | --------------------------------------- | ----------------- |
+| **rebar_price**           | Precio de varilla corrugada en USD/ton                                | Steel_Rebar_Futures_Historical_Data.csv | No                |
+| **hot_rolled_coil_price** | Precio del acero laminado en caliente (Hot Rolled Coil) en USD/ton    | Yahoo Finance (HRC=F)                   | Sí                |
+| **iron_ore_price**        | Precio del mineral de hierro (Iron Ore) en USD/ton                    | Yahoo Finance (TIO=F)                   | Sí                |
+| **coking_coal_price**     | Precio del carbón coquizable (Coking Coal) para alto horno en USD/ton | Yahoo Finance (MTF=F)                   | Sí                |
+| **copper_price**          | Precio del cobre en USD/libra                                         | Yahoo Finance (HG=F)                    | Sí                |
+| **crude_oil_price**       | Precio del petróleo crudo en USD/barril                               | Yahoo Finance (CL=F)                    | Sí                |
+| **usd_cny**               | Tipo de cambio USD/CNY (yuan chino por dólar estadounidense)          | Yahoo Finance (USDCNY=X)                | Sí                |
+| **aluminum_price**        | Precio del aluminio en USD/ton                                        | Yahoo Finance (ALI=F)                   | Sí                |
+| **dollar_index**          | Índice de fortaleza del dólar estadounidense (base 100)               | Yahoo Finance (DX-Y.NYB)                | Sí                |
+| **vix**                   | Volatilidad esperada del S&P 500 (índice de puntos de volatilidad)    | Yahoo Finance (^VIX)                    | Sí                |
+| **sp500**                 | Índice bursátil de las 500 empresas más grandes de EE. UU.            | Yahoo Finance (^GSPC)                   | Sí                |
+| **usd_mxn**               | Tipo de cambio USD/MXN (peso mexicano por dólar estadounidense)       | FRED (DEXMXUS)                          | Sí                |
+
+
 
 
 ________________________________________
