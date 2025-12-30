@@ -35,11 +35,9 @@ ________________________________________
 
 Nuestra solución consistió principalmente en:
 
-1. Calidad de datos, analisis de datos exploratorio, pre-procesamiento de datos, entrenamiento y evaluación de varios modelos ML para:
+1. Calidad de datos, analisis de datos exploratorio, pre-procesamiento de datos, entrenamiento y evaluación del modelo XGBRegressor:
    
-   **Clasificación**: predecir la variable categórica **default.payment.next.month** y
-   
-   **Regresión**: predecir la variable númerica **PAY_AMT4**.
+   **Regresión**: predecir la variable de precio de varilla corrugada del siguiente día **target_t_plus_1"**.
 
 La estructura de este proyecto es:
 
