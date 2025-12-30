@@ -85,6 +85,32 @@ ________________________________________
 
 5. Ejecutar el script, indicando adecuadamente el environment previamente creado.
 
+**API**:
+1. Abrir una terminal de Anaconda Prompt e ir a la carpeta donde descargaste este proyecto:
+   ```bash
+   cd your_local_root\API-steel-rebar-price-prediction
+2. Crear y activar el entorno virtual
+   ```bash
+   conda create -n API-steel-rebar-price-prediction_env python=3.11.4 -y
+   conda activate API-steel-rebar-price-prediction_env
+3. Instalar dependencias
+   ```bash
+   pip install -r requirements.txt
+4. Ejecutar el servidor FastAPI
+   uvicorn appFastAPI.app:app --reload
+5. Abrir la documentación interactiva (Ver el link en la terminal de Anaconda Prompt) en un navegador web
+   Ejemplo: http://127.0.0.1:8000/docs
+6. En la API app, seleccionar el endpoint GET, inglesar el API_KEY = deacero-2025 y verá la predicción del precio de la varilla corrugada para el siguiente día:
+   ```text
+  "prediction_date": "2025-12-31",
+  "predicted_price_usd_per_ton": 596.79,
+  "currency": "USD",
+  "unit": "metric ton",
+  "model_confidence": 0.8,
+  "timestamp": "2025-12-30T17:23:02.194507Z"
+   ```
+
+
 **Interpretación de solución para negocio**:
 
 1. **Problema de regresión: estimación del monto de pago mensual (PAY_AMT4)**
