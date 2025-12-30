@@ -101,7 +101,7 @@ ________________________________________
 5. Abrir la documentación interactiva (Ver el link en la terminal de Anaconda Prompt) en un navegador web
    Ejemplo: http://127.0.0.1:8000/docs
 6. En la API app, seleccionar el endpoint GET, inglesar el API_KEY = deacero-2025 y verá la predicción del precio de la varilla corrugada para el siguiente día:
-   ```text
+   ```bash
   "prediction_date": "2025-12-31",
   "predicted_price_usd_per_ton": 596.79,
   "currency": "USD",
