@@ -101,26 +101,26 @@ ________________________________________
 5. Abrir la documentación interactiva (Ver el link en la terminal de Anaconda Prompt) en un navegador web
    Ejemplo: http://127.0.0.1:8000/docs
 6. En la API app, seleccionar el endpoint GET, inglesar el API_KEY = deacero-2025 y verá la predicción del precio de la varilla corrugada para el siguiente día:
-   ```bash
+   
   "prediction_date": "2025-12-31",
   "predicted_price_usd_per_ton": 596.79,
   "currency": "USD",
   "unit": "metric ton",
   "model_confidence": 0.8,
   "timestamp": "2025-12-30T17:23:02.194507Z"
-   ```
+   
 
 
 **Interpretación de solución para negocio**:
 
-1. **Problema de regresión: estimación del monto de pago mensual (PAY_AMT4)**
-   
-   Para el problema de regresión se evaluaron tres modelos principales: Random Forest, XGBoost y LightGBM. La métrica objetivo fue R², dado que mide la proporción de variabilidad del monto pagado que el modelo es capaz de explicar.
-   
-   El modelo con mejor desempeño fue XGBoost, alcanzando un R² ≈ 0.82. Esto indica que el modelo es capaz de explicar alrededor del 82% de la variación del monto de pago mensual. Para negocio, este nivel de precisión permitiría anticipar montos esperados de pago, generar estrategias de cobranza diferenciadas y optimizar flujos financieros.
+Este proyecto proporciona un modelo predictivo de precios de la varilla corrugada en USD/ton, considerando factores macroeconómicos y materias primas. La interpretación clave para negocio es:
 
-3. **Problema de clasificación: predicción de incumplimiento de pago (default.payment.next.month)**
-   
-   Para la clasificación se utilizaron los mismos algoritmos, ahora en su versión de clasificación. La métrica seleccionada fue el F1-score de la clase 1, ya que representa un equilibrio entre la capacidad de detectar casos de incumplimiento (recall) y la precisión al hacerlo (precision).
-   
-   El mejor modelo fue Random Forest, alcanzando un Recall de Clase 1 ≈ 54%. Esto significa que el modelo es capaz de identificar poco más de la mitad de los clientes que incurrirán en mora. Aunque el desempeño es razonable, aún existe margen de mejora si el objetivo del negocio es detectar más casos de riesgo de mora. 
+Precio de varilla (rebar_price): Permite anticipar tendencias de costos para planificación de compras y presupuestos de construcción.
+
+Factores de influencia: Precios de acero laminado, mineral de hierro, carbón coquizable, aluminio y cobre; tipo de cambio USD/CNY y USD/MXN; volatilidad del S&P 500 (VIX). Esto ayuda a identificar qué variables macroeconómicas impactan más el precio.
+
+Toma de decisiones: Con predicciones diarias, empresas pueden optimizar inventarios, negociar contratos y gestionar riesgos financieros.
+
+Limitaciones: Algunos datos históricos se cargan desde CSV (Steel_Rebar_Futures_Historical_Data.csv) y no se actualizan automáticamente; otros (Yahoo Finance, FRED) sí se descargan en tiempo real, lo que permite predicciones más recientes y confiables.
+
+Resumen: La herramienta soporta decisiones estratégicas y operativas en compras y planificación financiera, destacando riesgos y oportunidades en el mercado de la varilla corrugada.
