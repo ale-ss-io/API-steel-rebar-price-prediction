@@ -109,7 +109,7 @@ ________________________________________
   "model_confidence": 0.8,
   "timestamp": "2025-12-30T17:23:02.194507Z"
    
-
+ 7. **La API REST pública es:** https://api-steel-rebar-price-prediction-13.onrender.com/
 
 **Interpretación de solución para negocio**:
 
